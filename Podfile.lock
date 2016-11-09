@@ -1,0 +1,30 @@
+PODS:
+  - Bolts/Tasks (1.8.4)
+  - GoogleMaps (2.1.0):
+    - GoogleMaps/Maps (= 2.1.0)
+  - GoogleMaps/Base (2.1.0)
+  - GoogleMaps/Maps (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - Intercom (3.0.17)
+  - Mixpanel (3.0.5):
+    - Mixpanel/Mixpanel (= 3.0.5)
+  - Mixpanel/Mixpanel (3.0.5)
+  - Parse (1.14.2):
+    - Bolts/Tasks (~> 1.8)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - Intercom
+  - Mixpanel
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  GoogleMaps: '06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c'
+  Intercom: 96e2ee799db55c04e7ece023756ddd70e0cf7390
+  Mixpanel: ad5ec38855baa42af0de52052466ab36ee240b87
+  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
+
+PODFILE CHECKSUM: 5332fc84c01d744808a572b8162b25f42512858c
+
+COCOAPODS: 1.1.1

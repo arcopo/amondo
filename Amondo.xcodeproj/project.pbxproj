@@ -7,23 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22244F431DD1ECE000E59458 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22244F421DD1ECE000E59458 /* Extensions.swift */; };
+		22244F451DD209B500E59458 /* AMDClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22244F441DD209B500E59458 /* AMDClasses.swift */; };
+		222A77CE1DCCC1B2005673AA /* IMG_2390.png in Resources */ = {isa = PBXBuildFile; fileRef = 222A77CD1DCCC1B2005673AA /* IMG_2390.png */; };
+		222A77D01DCCC1D0005673AA /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A77CF1DCCC1D0005673AA /* InstagramViewController.swift */; };
+		222A77D21DCCC875005673AA /* SpotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A77D11DCCC875005673AA /* SpotifyViewController.swift */; };
+		222A77D41DCCC89A005673AA /* Jimmyeatworld.png in Resources */ = {isa = PBXBuildFile; fileRef = 222A77D31DCCC89A005673AA /* Jimmyeatworld.png */; };
+		222A77D61DCCCAC3005673AA /* Article.png in Resources */ = {isa = PBXBuildFile; fileRef = 222A77D51DCCCAC3005673AA /* Article.png */; };
+		222A77D81DCCCBF5005673AA /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A77D71DCCCBF5005673AA /* ArticleViewController.swift */; };
 		2237E57A1DC92BF700D3EAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5791DC92BF700D3EAE1 /* AppDelegate.swift */; };
-		2237E57C1DC92BF700D3EAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E57B1DC92BF700D3EAE1 /* ViewController.swift */; };
-		2237E57F1DC92BF700D3EAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2237E57D1DC92BF700D3EAE1 /* Main.storyboard */; };
 		2237E5821DC92BF700D3EAE1 /* Amondo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5801DC92BF700D3EAE1 /* Amondo.xcdatamodeld */; };
 		2237E5841DC92BF700D3EAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2237E5831DC92BF700D3EAE1 /* Assets.xcassets */; };
-		2237E5871DC92BF700D3EAE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2237E5851DC92BF700D3EAE1 /* LaunchScreen.storyboard */; };
+		2237E5A81DC92CB200D3EAE1 /* CompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E58F1DC92CB200D3EAE1 /* CompletionViewController.swift */; };
+		2237E5A91DC92CB200D3EAE1 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5901DC92CB200D3EAE1 /* FeedbackViewController.swift */; };
+		2237E5AA1DC92CB200D3EAE1 /* ImprintCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5911DC92CB200D3EAE1 /* ImprintCollectionViewController.swift */; };
+		2237E5AB1DC92CB200D3EAE1 /* ImprintLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5921DC92CB200D3EAE1 /* ImprintLoadingViewController.swift */; };
+		2237E5AC1DC92CB200D3EAE1 /* IntroCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5931DC92CB200D3EAE1 /* IntroCompleteViewController.swift */; };
+		2237E5AD1DC92CB200D3EAE1 /* IntroHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5941DC92CB200D3EAE1 /* IntroHelloViewController.swift */; };
+		2237E5AE1DC92CB200D3EAE1 /* IntroNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5951DC92CB200D3EAE1 /* IntroNotificationsViewController.swift */; };
+		2237E5AF1DC92CB200D3EAE1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5961DC92CB200D3EAE1 /* IntroViewController.swift */; };
+		2237E5B01DC92CB200D3EAE1 /* ImprintLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5981DC92CB200D3EAE1 /* ImprintLayout.swift */; };
+		2237E5B11DC92CB200D3EAE1 /* Layouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2237E5991DC92CB200D3EAE1 /* Layouts.plist */; };
+		2237E5B21DC92CB200D3EAE1 /* UIPanDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E59B1DC92CB200D3EAE1 /* UIPanDirection.swift */; };
+		2237E5B31DC92CB200D3EAE1 /* PlopixKonamiGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E59E1DC92CB200D3EAE1 /* PlopixKonamiGesture.swift */; };
+		2237E5B41DC92CB200D3EAE1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E59F1DC92CB200D3EAE1 /* StringExtension.swift */; };
+		2237E5B51DC92CB200D3EAE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2237E5A11DC92CB200D3EAE1 /* LaunchScreen.storyboard */; };
+		2237E5B61DC92CB200D3EAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2237E5A21DC92CB200D3EAE1 /* Main.storyboard */; };
+		2237E5B71DC92CB200D3EAE1 /* FeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5A41DC92CB200D3EAE1 /* FeedbackTableViewCell.swift */; };
+		2237E5B81DC92CB200D3EAE1 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5A51DC92CB200D3EAE1 /* ImageCollectionViewCell.swift */; };
+		2237E5B91DC92CB200D3EAE1 /* LoaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5A61DC92CB200D3EAE1 /* LoaderImage.swift */; };
+		2237E5BA1DC92CB200D3EAE1 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237E5A71DC92CB200D3EAE1 /* VideoCollectionViewCell.swift */; };
+		225500F91DD35FC80065846D /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225500F81DD35FC80065846D /* CommentCell.swift */; };
+		22C91A6B1DC9309000B53076 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C91A6A1DC9309000B53076 /* SpotifyMetadata.framework */; };
+		22CD7E471DD0ABF00063EE45 /* MapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 22CD7E461DD0AB920063EE45 /* MapStyle.json */; };
+		BD57E0E860C8034697024C4F /* Pods_Amondo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152D4538A5AD48C76E777B90 /* Pods_Amondo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152D4538A5AD48C76E777B90 /* Pods_Amondo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amondo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22244F421DD1ECE000E59458 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Storyboards/Extensions.swift; sourceTree = "<group>"; };
+		22244F441DD209B500E59458 /* AMDClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMDClasses.swift; path = Views/AMDClasses.swift; sourceTree = "<group>"; };
+		222A77CD1DCCC1B2005673AA /* IMG_2390.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2390.png; sourceTree = "<group>"; };
+		222A77CF1DCCC1D0005673AA /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstagramViewController.swift; path = Storyboards/InstagramViewController.swift; sourceTree = "<group>"; };
+		222A77D11DCCC875005673AA /* SpotifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpotifyViewController.swift; path = ../SpotifyViewController.swift; sourceTree = "<group>"; };
+		222A77D31DCCC89A005673AA /* Jimmyeatworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jimmyeatworld.png; sourceTree = "<group>"; };
+		222A77D51DCCCAC3005673AA /* Article.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Article.png; sourceTree = "<group>"; };
+		222A77D71DCCCBF5005673AA /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = Storyboards/ArticleViewController.swift; sourceTree = "<group>"; };
 		2237E5761DC92BF700D3EAE1 /* Amondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2237E5791DC92BF700D3EAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2237E57B1DC92BF700D3EAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2237E57E1DC92BF700D3EAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2237E5811DC92BF700D3EAE1 /* Amondo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amondo.xcdatamodel; sourceTree = "<group>"; };
 		2237E5831DC92BF700D3EAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2237E5861DC92BF700D3EAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2237E5881DC92BF700D3EAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2237E58F1DC92CB200D3EAE1 /* CompletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionViewController.swift; sourceTree = "<group>"; };
+		2237E5901DC92CB200D3EAE1 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		2237E5911DC92CB200D3EAE1 /* ImprintCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprintCollectionViewController.swift; sourceTree = "<group>"; };
+		2237E5921DC92CB200D3EAE1 /* ImprintLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprintLoadingViewController.swift; sourceTree = "<group>"; };
+		2237E5931DC92CB200D3EAE1 /* IntroCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCompleteViewController.swift; sourceTree = "<group>"; };
+		2237E5941DC92CB200D3EAE1 /* IntroHelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroHelloViewController.swift; sourceTree = "<group>"; };
+		2237E5951DC92CB200D3EAE1 /* IntroNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroNotificationsViewController.swift; sourceTree = "<group>"; };
+		2237E5961DC92CB200D3EAE1 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		2237E5981DC92CB200D3EAE1 /* ImprintLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprintLayout.swift; sourceTree = "<group>"; };
+		2237E5991DC92CB200D3EAE1 /* Layouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Layouts.plist; sourceTree = "<group>"; };
+		2237E59B1DC92CB200D3EAE1 /* UIPanDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPanDirection.swift; sourceTree = "<group>"; };
+		2237E59D1DC92CB200D3EAE1 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2237E59E1DC92CB200D3EAE1 /* PlopixKonamiGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlopixKonamiGesture.swift; sourceTree = "<group>"; };
+		2237E59F1DC92CB200D3EAE1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2237E5A11DC92CB200D3EAE1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2237E5A21DC92CB200D3EAE1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2237E5A41DC92CB200D3EAE1 /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
+		2237E5A51DC92CB200D3EAE1 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		2237E5A61DC92CB200D3EAE1 /* LoaderImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderImage.swift; sourceTree = "<group>"; };
+		2237E5A71DC92CB200D3EAE1 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		225500F81DD35FC80065846D /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = ../Storyboards/CommentCell.swift; sourceTree = "<group>"; };
+		22C91A6A1DC9309000B53076 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		22C91A6C1DC9314F00B53076 /* Amondo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amondo-Bridging-Header.h"; sourceTree = "<group>"; };
+		22CD7E461DD0AB920063EE45 /* MapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapStyle.json; sourceTree = "<group>"; };
+		9BC368123488A8891AA78B1E /* Pods-Amondo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amondo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amondo/Pods-Amondo.release.xcconfig"; sourceTree = "<group>"; };
+		A08B8880799D927AD25FB20D /* Pods-Amondo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amondo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amondo/Pods-Amondo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +91,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C91A6B1DC9309000B53076 /* SpotifyMetadata.framework in Frameworks */,
+				BD57E0E860C8034697024C4F /* Pods_Amondo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11031E2B1AFC3D949AF47AC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A08B8880799D927AD25FB20D /* Pods-Amondo.debug.xcconfig */,
+				9BC368123488A8891AA78B1E /* Pods-Amondo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2237E56D1DC92BF700D3EAE1 = {
 			isa = PBXGroup;
 			children = (
+				22CD7E461DD0AB920063EE45 /* MapStyle.json */,
+				22C91A6A1DC9309000B53076 /* SpotifyMetadata.framework */,
 				2237E5781DC92BF700D3EAE1 /* Amondo */,
+				224DE92D1DD3AC1C0025056D /* Placeholder Images */,
 				2237E5771DC92BF700D3EAE1 /* Products */,
+				11031E2B1AFC3D949AF47AC9 /* Pods */,
+				E44BE57FE938153F7109B853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +133,112 @@
 			isa = PBXGroup;
 			children = (
 				2237E5791DC92BF700D3EAE1 /* AppDelegate.swift */,
-				2237E57B1DC92BF700D3EAE1 /* ViewController.swift */,
-				2237E57D1DC92BF700D3EAE1 /* Main.storyboard */,
+				224DE92E1DD3AC320025056D /* Detail Views */,
+				2237E58E1DC92CB200D3EAE1 /* Controllers */,
+				2237E5971DC92CB200D3EAE1 /* Layouts */,
+				2237E59A1DC92CB200D3EAE1 /* Models */,
+				2237E59C1DC92CB200D3EAE1 /* Other */,
+				2237E5A01DC92CB200D3EAE1 /* Storyboards */,
+				2237E5A31DC92CB200D3EAE1 /* Views */,
+				22244F441DD209B500E59458 /* AMDClasses.swift */,
+				22244F421DD1ECE000E59458 /* Extensions.swift */,
 				2237E5831DC92BF700D3EAE1 /* Assets.xcassets */,
-				2237E5851DC92BF700D3EAE1 /* LaunchScreen.storyboard */,
 				2237E5881DC92BF700D3EAE1 /* Info.plist */,
 				2237E5801DC92BF700D3EAE1 /* Amondo.xcdatamodeld */,
+				22C91A6C1DC9314F00B53076 /* Amondo-Bridging-Header.h */,
 			);
 			path = Amondo;
+			sourceTree = "<group>";
+		};
+		2237E58E1DC92CB200D3EAE1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2237E58F1DC92CB200D3EAE1 /* CompletionViewController.swift */,
+				2237E5901DC92CB200D3EAE1 /* FeedbackViewController.swift */,
+				2237E5911DC92CB200D3EAE1 /* ImprintCollectionViewController.swift */,
+				2237E5921DC92CB200D3EAE1 /* ImprintLoadingViewController.swift */,
+				2237E5931DC92CB200D3EAE1 /* IntroCompleteViewController.swift */,
+				2237E5941DC92CB200D3EAE1 /* IntroHelloViewController.swift */,
+				2237E5951DC92CB200D3EAE1 /* IntroNotificationsViewController.swift */,
+				2237E5961DC92CB200D3EAE1 /* IntroViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2237E5971DC92CB200D3EAE1 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				2237E5981DC92CB200D3EAE1 /* ImprintLayout.swift */,
+				2237E5991DC92CB200D3EAE1 /* Layouts.plist */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		2237E59A1DC92CB200D3EAE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2237E59B1DC92CB200D3EAE1 /* UIPanDirection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2237E59C1DC92CB200D3EAE1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2237E59D1DC92CB200D3EAE1 /* Bridging-Header.h */,
+				2237E59E1DC92CB200D3EAE1 /* PlopixKonamiGesture.swift */,
+				2237E59F1DC92CB200D3EAE1 /* StringExtension.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2237E5A01DC92CB200D3EAE1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2237E5A11DC92CB200D3EAE1 /* LaunchScreen.storyboard */,
+				2237E5A21DC92CB200D3EAE1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2237E5A31DC92CB200D3EAE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2237E5A41DC92CB200D3EAE1 /* FeedbackTableViewCell.swift */,
+				2237E5A51DC92CB200D3EAE1 /* ImageCollectionViewCell.swift */,
+				2237E5A61DC92CB200D3EAE1 /* LoaderImage.swift */,
+				2237E5A71DC92CB200D3EAE1 /* VideoCollectionViewCell.swift */,
+				225500F81DD35FC80065846D /* CommentCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		224DE92D1DD3AC1C0025056D /* Placeholder Images */ = {
+			isa = PBXGroup;
+			children = (
+				222A77D51DCCCAC3005673AA /* Article.png */,
+				222A77D31DCCC89A005673AA /* Jimmyeatworld.png */,
+				222A77CD1DCCC1B2005673AA /* IMG_2390.png */,
+			);
+			name = "Placeholder Images";
+			sourceTree = "<group>";
+		};
+		224DE92E1DD3AC320025056D /* Detail Views */ = {
+			isa = PBXGroup;
+			children = (
+				222A77D11DCCC875005673AA /* SpotifyViewController.swift */,
+				222A77CF1DCCC1D0005673AA /* InstagramViewController.swift */,
+				222A77D71DCCCBF5005673AA /* ArticleViewController.swift */,
+			);
+			name = "Detail Views";
+			sourceTree = "<group>";
+		};
+		E44BE57FE938153F7109B853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152D4538A5AD48C76E777B90 /* Pods_Amondo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2237E58B1DC92BF700D3EAE1 /* Build configuration list for PBXNativeTarget "Amondo" */;
 			buildPhases = (
+				3EA887E5DA5746CEFD1860A2 /* [CP] Check Pods Manifest.lock */,
 				2237E5721DC92BF700D3EAE1 /* Sources */,
 				2237E5731DC92BF700D3EAE1 /* Frameworks */,
 				2237E5741DC92BF700D3EAE1 /* Resources */,
+				2D730CB9CCEA6FCB01BB6682 /* [CP] Embed Pods Frameworks */,
+				49DD0DC580279E84442C427E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +276,8 @@
 				TargetAttributes = {
 					2237E5751DC92BF700D3EAE1 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YU34A3Z6NS;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,45 +305,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2237E5871DC92BF700D3EAE1 /* LaunchScreen.storyboard in Resources */,
+				22CD7E471DD0ABF00063EE45 /* MapStyle.json in Resources */,
+				222A77CE1DCCC1B2005673AA /* IMG_2390.png in Resources */,
+				222A77D41DCCC89A005673AA /* Jimmyeatworld.png in Resources */,
+				2237E5B51DC92CB200D3EAE1 /* LaunchScreen.storyboard in Resources */,
+				2237E5B11DC92CB200D3EAE1 /* Layouts.plist in Resources */,
+				222A77D61DCCCAC3005673AA /* Article.png in Resources */,
 				2237E5841DC92BF700D3EAE1 /* Assets.xcassets in Resources */,
-				2237E57F1DC92BF700D3EAE1 /* Main.storyboard in Resources */,
+				2237E5B61DC92CB200D3EAE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D730CB9CCEA6FCB01BB6682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Amondo/Pods-Amondo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EA887E5DA5746CEFD1860A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49DD0DC580279E84442C427E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Amondo/Pods-Amondo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2237E5721DC92BF700D3EAE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2237E57C1DC92BF700D3EAE1 /* ViewController.swift in Sources */,
+				22244F431DD1ECE000E59458 /* Extensions.swift in Sources */,
+				2237E5B81DC92CB200D3EAE1 /* ImageCollectionViewCell.swift in Sources */,
+				2237E5AC1DC92CB200D3EAE1 /* IntroCompleteViewController.swift in Sources */,
+				22244F451DD209B500E59458 /* AMDClasses.swift in Sources */,
+				2237E5B41DC92CB200D3EAE1 /* StringExtension.swift in Sources */,
+				225500F91DD35FC80065846D /* CommentCell.swift in Sources */,
 				2237E57A1DC92BF700D3EAE1 /* AppDelegate.swift in Sources */,
+				2237E5B01DC92CB200D3EAE1 /* ImprintLayout.swift in Sources */,
+				222A77D81DCCCBF5005673AA /* ArticleViewController.swift in Sources */,
+				2237E5AA1DC92CB200D3EAE1 /* ImprintCollectionViewController.swift in Sources */,
+				2237E5BA1DC92CB200D3EAE1 /* VideoCollectionViewCell.swift in Sources */,
+				2237E5AE1DC92CB200D3EAE1 /* IntroNotificationsViewController.swift in Sources */,
+				222A77D01DCCC1D0005673AA /* InstagramViewController.swift in Sources */,
+				2237E5A81DC92CB200D3EAE1 /* CompletionViewController.swift in Sources */,
+				222A77D21DCCC875005673AA /* SpotifyViewController.swift in Sources */,
+				2237E5A91DC92CB200D3EAE1 /* FeedbackViewController.swift in Sources */,
+				2237E5B31DC92CB200D3EAE1 /* PlopixKonamiGesture.swift in Sources */,
+				2237E5AB1DC92CB200D3EAE1 /* ImprintLoadingViewController.swift in Sources */,
+				2237E5B21DC92CB200D3EAE1 /* UIPanDirection.swift in Sources */,
+				2237E5AF1DC92CB200D3EAE1 /* IntroViewController.swift in Sources */,
 				2237E5821DC92BF700D3EAE1 /* Amondo.xcdatamodeld in Sources */,
+				2237E5B71DC92CB200D3EAE1 /* FeedbackTableViewCell.swift in Sources */,
+				2237E5B91DC92CB200D3EAE1 /* LoaderImage.swift in Sources */,
+				2237E5AD1DC92CB200D3EAE1 /* IntroHelloViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2237E57D1DC92BF700D3EAE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2237E57E1DC92BF700D3EAE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2237E5851DC92BF700D3EAE1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2237E5861DC92BF700D3EAE1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2237E5891DC92BF700D3EAE1 /* Debug */ = {
@@ -213,6 +447,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -254,31 +489,69 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		2237E58C1DC92BF700D3EAE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08B8880799D927AD25FB20D /* Pods-Amondo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YU34A3Z6NS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Amondo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amondo.Amondo;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"Parse\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amondo.alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amondo/Amondo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		2237E58D1DC92BF700D3EAE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC368123488A8891AA78B1E /* Pods-Amondo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YU34A3Z6NS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Amondo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amondo.Amondo;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"Parse\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amondo.alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amondo/Amondo-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -301,6 +574,7 @@
 				2237E58D1DC92BF700D3EAE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

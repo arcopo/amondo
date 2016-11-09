@@ -2,92 +2,166 @@
 //  AppDelegate.swift
 //  Amondo
 //
-//  Created by Timothy Whiting on 01/11/2016.
-//  Copyright © 2016 Arcopo. All rights reserved.
+//  Created by James Bradley on 01/05/2016.
+//  Copyright © 2016 Amondo. All rights reserved.
 //
 
+//import Analytics
+import CoreLocation
+//import Intercom
 import UIKit
-import CoreData
+import Parse
+import GoogleMaps
+let GMAPS_API_KEY = "AIzaSyAfpwTMOBDc2Npu4JRVBn_m_wOGzm4wuf0"
+
+
+//  parse-dashboard --appId myAppId --masterKey myMasterKey --serverURL "http://amondo.herokuapp.com/parse" --appName Amondo-Dev
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        let plist = NSBundle.mainBundle().infoDictionary
+        
+   //     let segmentConfig = SEGAnalyticsConfiguration(writeKey: plist!["segmentWriteKey"] as! String)
+     //   segmentConfig.trackApplicationLifecycleEvents = true
+       // segmentConfig.recordScreenViews = true
+       // SEGAnalytics.setupWithConfiguration(segmentConfig!)
+                
+  //      Intercom.setApiKey(plist!["IntercomApiKey"] as! String,
+    //                       forAppId: plist!["IntercomAppId"] as! String)
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    //    Intercom.registerUnidentifiedUser()
+        
+        selectLandingPage()
+        GMSServices.provideAPIKey(GMAPS_API_KEY)
+        
+        Parse.initializeWithConfiguration(ParseClientConfiguration(block: { (config:ParseMutableClientConfiguration) in
+            config.applicationId="myAppId"
+            config.clientKey="myMasterKey"
+            config.server="http://amondo.herokuapp.com/parse"
+        }))
+        
+      /*  let uri = NSURL(string: "spotify:album:58Dbqi6VBskSmnSsbXbgrs")
+        SPTAlbum.albumWithURI(uri, accessToken: "c51bb68f3e194b1bbe386ad6f690a5e0", market: "GB") { (error:NSError!, ob:AnyObject!) in
+            print(error)
+ 
+        }*/
+        
+        let url = NSURL(string:"https://api.spotify.com/v1/albums/58Dbqi6VBskSmnSsbXbgrs?market=GB")!
+   
+       /*
+      
+        let data = NSData(contentsOfURL: url)!
+        do {
+            let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+            print(json)
+        } catch let error {
+            
+        }
+        */
+        
+        let comment: [[String:AnyObject]] =
+            [
+                ["comment":"This is the comment",
+                    "username":"@tim",
+                "date":NSDate()],
+                ["comment":"This is the secondcomment",
+                    "username":"@jonny",
+                    "date":NSDate()]
+        ]
+  /*      let ob = PFObject(className: "DataAssets")
+        ob.setValue(comment, forKey: "comments")
+        ob.saveInBackgroundWithBlock { (suc:Bool, error:NSError?) in
+        
+            
+            print(suc)
+            
+            
+        }
+   */     
+        /*
+        let requestURL: NSURL = url
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(urlRequest) {
+            (data, response, error) -> Void in
+            
+            let httpResponse = response as! NSHTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            
+        
+            
+            
+            
+            if (statusCode == 200) {
+                print("Everyone is fine, file downloaded successfully.")
+                do {
+                    let json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
+                    
+                    let dictionary = json as! [String:AnyObject]
+                    
+                    let albumName = dictionary["name"] as! String
+                    let albumArtists = (dictionary["artists"]![0] as! [String:AnyObject])["name"]
+                    let tracks = (dictionary["tracks"] as! [String:AnyObject])
+                    
+                    print(albumName)
+                    print(albumArtists)
+                    print(tracks)
+                } catch let error {
+                    
+                }
+            }
+        }
+        
+        task.resume()
+ */
         return true
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
+    func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
+    func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        
+        selectLandingPage()
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
+    func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
-    func applicationWillTerminate(_ application: UIApplication) {
+    func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
+
     }
-
-    // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "Amondo")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-
-    // MARK: - Core Data Saving support
-
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+    
+    func selectLandingPage() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setValue(NSDate(), forKey: "notificationFireDate")
+        
+        let fireDate = defaults.objectForKey("notificationFireDate") as? NSDate
+     
+        if (fireDate != nil) {
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            if fireDate!.compare(NSDate()) == .OrderedAscending {
+                let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("imprintStart")
+                self.window!.rootViewController = viewController
+            } else {
+                let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("introComplete")
+                self.window!.rootViewController = viewController
             }
         }
     }
-
 }
-
